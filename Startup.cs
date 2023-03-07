@@ -39,8 +39,8 @@ namespace CRUDAspNetCore5WebAPI
                 b=> b.MigrationsAssembly("CRUDAspNetCore5WebAPI")));
             services.AddControllers();
             services.AddHttpClient();
-            services.AddTransient<IRepository<Person>, RepositoryPerson>();
-            services.AddTransient<PersonService, PersonService>();
+            services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddTransient<ProductService, ProductService>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
